@@ -32,7 +32,6 @@ body {
     cursor: pointer;
 }
 
-
 #navbar ul li a:hover {
     color: rgb(0, 190, 0);
     opacity: 1;
@@ -162,6 +161,20 @@ body {
         height: 20px;
         border-radius: 10px;
     }
+    #certificates-section .certificate-headers .course-title {
+        font-size: 1rem;
+        min-width: 200px;
+    }
+    #certificates-section .certificate-headers .course-date {
+        font-size: 1rem;
+    }
+    #certificates-section .certificate-content .course-title {
+        font-size: 1rem;
+        min-width: 200px;
+    }
+    #certificates-section .certificate-content .course-date {
+        font-size: 1rem;
+    }
 }
 
 .progress-button.fill {
@@ -218,6 +231,40 @@ body {
     color: green;
 }
 
+#certificates-section {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+#certificates-heading {
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}
+
+#certificates-section .certificate-headers {
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#certificates-section .certificate-headers .course-title {
+    width: 80%;
+    margin-right: 10px;
+}
+
+#certificates-section  .certificate-content {
+    font-size: 1.5rem;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#certificates-section .certificate-content .course-title {
+    width: 80%;
+    margin-right: 10px;
+}
+
 #contact-section {
     background-color: black;
     color: white;
@@ -232,7 +279,8 @@ body {
 
 #contact-section .contact-links {
     display: flex;
-    flex-wrap: wrap;justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 30px;
     margin: 0;
 }
