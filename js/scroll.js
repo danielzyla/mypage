@@ -25,7 +25,6 @@ window.onload = function() {
         const section = document.getElementById(link.innerText.toLowerCase() + "-section");
         link.onclick = function() {
             scrollDown(section);
-            console.log(section.offsetTop);
         }
     }
 }
