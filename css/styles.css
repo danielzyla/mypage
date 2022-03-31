@@ -1,0 +1,270 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 224, 224);
+    font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+#navbar {
+    margin-top: -50px;
+    padding: 5px 0;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 5px 5px 0px rgb(255, 252, 252);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar ul li a {
+    margin: 0 10px;
+    color: black;
+    opacity: 0.8;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#navbar ul li a:hover {
+    color: rgb(0, 190, 0);
+    opacity: 1;
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+
+#home-section {
+    display: flex;
+    width: 70%;
+    margin: 50px auto;
+    padding: 50px 0 50px 0;
+}
+
+#home-section img {
+    min-width: 200px;
+    max-width: 100%;
+}
+
+#home-section .welcome-container {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-section p {
+    margin: 1.5rem;
+    font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#skills-section {
+
+    background-color: whitesmoke;
+    color: black;
+    align-items: center;
+}
+
+#skills-heading {
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}
+
+.skills-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+}
+
+.skill-information {
+    padding: 2rem;
+    text-align: center;
+    display: flex; 
+    flex: no-wrap;
+    align-items: center;
+}
+
+.skill-information p {
+    margin: 0 20px 0 0;
+}
+
+.skill-name {
+    font-size: 1.5rem;
+}
+
+.progress-button {
+    border: none;
+    outline: 2px solid black;
+}
+
+@media screen and (min-width: 769px) {
+    #navbar ul {
+        display: flex;
+        width: 70%;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+    #navbar ul li a {
+        font-size: 1.5rem;
+    }
+    #home-section p {
+        font-size: 2rem;
+    }
+    .skill-information p {
+        font-size: 2rem;
+    }
+    .progress-button {
+        margin-left: 20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #navbar {
+        height: 200px;
+        margin-top: -200px;
+    }
+    #navbar ul {
+        list-style-type: none;
+    }
+    #navbar ul li {
+        margin: 10px 0;
+    }
+    #navbar ul li a {
+        font-size: 1rem;
+    }
+    #home-section {
+        margin-top: 200px;
+    }
+    #home-section p {
+        font-size: 1rem;
+    }
+    .skill-information p {
+        font-size: 1rem;
+    }
+    .progress-button {
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+    }
+}
+
+.progress-button.fill {
+    background-color: green;
+}
+
+.progress-button.outline {
+    background:rgba(224, 224, 224, .10);
+}
+
+#projects-section {
+    background-color: black;
+}
+
+#projects-heading {
+    text-align: center;
+    color: whitesmoke;
+}
+
+#projects-section h1 {
+    margin: 0;
+    padding: 15px;
+}
+
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-image-box {
+    margin: 30px 15px;
+}
+
+.project-image-box img {
+    height: auto;
+    max-width: 30vw;
+    min-width: 250px;
+}
+
+.project-image-box p {
+    text-align: center;
+}
+
+.project-image-box a {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image-box a:hover {
+    color: green;
+}
+
+#contact-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    min-height: 30vh;
+}
+
+#contact-section .contact-heading {
+    margin: 0;
+    padding: 15px;
+}
+
+#contact-section .contact-links {
+    display: flex;
+    flex-wrap: wrap;justify-content: center;
+    padding: 30px;
+    margin: 0;
+}
+
+#contact-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 20px 0 0;
+}
+
+#contact-section a:hover {
+    color: green;
+}
+
+#contact-section i {
+    color: white;
+    font-size: 1.2rem;
+    margin: 20px 10px 0 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    min-height: 20vh;
+    color: whitesmoke;
+    border-top: 1px solid whitesmoke;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+}
